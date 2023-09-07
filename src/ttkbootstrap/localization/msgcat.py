@@ -98,6 +98,7 @@ class MessageCatalog:
 
     @staticmethod
     def set(locale, src, translated=None):
+        return src
         """Sets the translation for 'src' to 'translated' in the
         specified locale. If translated is not specified, src is used
         for both.
@@ -119,6 +120,7 @@ class MessageCatalog:
 
     @staticmethod
     def set_many(locale, *args):
+        return args
         """Sets the translation for multiple source strings in *args in
         the specified locale and the current namespace. Must be an even
         number of args.
