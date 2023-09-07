@@ -4,6 +4,7 @@ from ttkbootstrap.window import get_default_root
 class MessageCatalog:
     @staticmethod
     def translate(src):
+        return src
         """Returns a translation of src according to the user's current
         locale.
 
